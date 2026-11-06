@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
       if (user != null && mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => NotesPage()),
+          MaterialPageRoute(builder: (_) => const NotesPage()),
         );
       }
     } catch (e) {
@@ -185,7 +185,7 @@ class _LoginPageState extends State<LoginPage> {
                         MaterialPageRoute(builder: (_) => RegisterPage()),
                       );
                     },
-                    child: Text("Ainda não possui uma conta? Cadastre-se", ),
+                    child: Text("Ainda não possui uma conta? Cadastre-se"),
                   ),
                 ),
               ],
